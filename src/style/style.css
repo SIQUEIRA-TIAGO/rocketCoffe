@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin-top: 50px;
+}
+
+.desktop-header .take-coffee-btn {
+    background-color: transparent;
+    border: #8257E5 1px solid;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    width: 172px;
+    height: 37px;
+}
+
+.desktop-header .take-coffee-btn:hover {
+    cursor: pointer;
+    background-color: #8257E5;
+}
+
+nav {
+    display: flex;
+    width: 65%;
+    justify-content: space-evenly;
+}
+
+nav .nav-anchor {
+    color: #fff;
+    font-size: 14px;
+}
+
+nav .nav-anchor:hover {
+    cursor: pointer;
+    color: #8257E5;
+}
+
+.title-area {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-area .coffee{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.title-area .code {
+    font-size: 80px;
+    font-weight: 700;
+    text-shadow:
+    -1px -1px 0 #8257E5,
+    1px -1px 0 #8257E5,
+    -1px 1px 0 #8257E5,
+    1px 1px 0 #8257E5;
+}
+
+.rocket-coffee-img {
+    pointer-events: none;
+    width: 46%;
+}
+
+.blurs .bottom {
+    pointer-events: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.blurs .top {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* MOBILE */
+
+.blurs .mobile {
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.mobile-area {
+    margin-top: 70px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.mobile-area p {
+    margin: auto 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.mobile-area .take-coffee-mobile-btn {
+    background-color: transparent;
+    border: #8257E5 1px solid;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    width: 172px;
+    height: 37px;
+}
+.mobile-area .take-coffee-mobile-btn:hover {
+    background-color: #8257E5
+}
+
+.mobile-header {
+    background-color: #000;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    padding: 30px 26px;
+    border-bottom: #fff 1px solid;
+}
+
+.mobile-nav {
+    width: 100vw;
+    display: none;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.nav-anchor-mobile {
+    padding: 14px 25px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: #fff 1px solid;
+}
+
+.nav-anchor-mobile:hover {
+    border-left: #8257E5 solid 5px;
+}
+
+.open {
+    display: flex;
+}
+
+/* Medias */
+
+@media (max-width: 750px) {
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+
+    .mobile-area {
+        display: flex;
+    }
+
+    .title-area .coffee {
+        font-size: 50px;
+    }
+    .title-area .code {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 428px) {
+    .blurs .bottom {
+        display: none;
+    }
+
+    .blurs .top {
+        display: none;
+    }
+
+    /* MOBILE */
+
+    .blurs .mobile {
+        display: block;
+    }
+}
