@@ -101,6 +101,15 @@ nav .nav-anchor:hover {
     right: 0;
 }
 
+.developer {
+    color: #FFFCF9;
+    font-family: 'Poppins', sans-serif;
+    opacity: 50%;
+    font-size: 10px;
+    position: fixed;
+    bottom: 10px;
+}
+
 /* MOBILE */
 
 .blurs .mobile {
