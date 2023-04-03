@@ -84,7 +84,6 @@ nav .nav-anchor:hover {
 
 .rocket-coffee-img {
     pointer-events: none;
-    width: 46%;
 }
 
 .blurs .bottom {
@@ -189,7 +188,11 @@ nav .nav-anchor:hover {
 
 /* Medias */
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
+    .rocket-coffee-img {
+        width: 80%;
+    }
+
     .desktop-header {
         display: none;
     }
@@ -211,6 +214,7 @@ nav .nav-anchor:hover {
 }
 
 @media (max-width: 428px) {
+
     .blurs .bottom {
         display: none;
     }
